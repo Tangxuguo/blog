@@ -42,8 +42,8 @@ BandwagonHost只支持paypal付款，这里参考[帖子](http://bbs.dgtle.com/t
 完成注册之后记得先去邮箱点击确认链接，这样账户才能激活。如果跳转链接出现问题，可以使用确认码去验证页面手动验证。验证的地方是登陆账户---右边系统通知的地方点验证邮箱---点第二布的[使用验证码验证]----填入邮件中确认按钮下面的[电子邮件地址]下面的确认码，然后就完成验证了。
 
 ##绑定银联卡
-然后就绑定银联卡，选择添加银联卡，这里需要注意的是paypal只支持62开头的银联卡
-<img src="/blog/public/images/posts/how-to-build-a-proxy/Image3.png" >
+然后就绑定银联卡，选择添加银联卡，这里需要注意的是paypal只支持62开头的银联卡[Paypal银联卡支付常见问题](https://cms.paypal.com/c2/cgi-bin/marketingweb?cmd=_render-content&content_ID=marketing_c2/FAQs_China_UnionPay_Payments&locale.x=zh_XC)
+<img src="/blog/public/images/posts/how-to-build-a-proxy/Image3.jpg" >
 
 然后就是一系列信息填写，这些都完成之后，我们的账户就完成了。
 
