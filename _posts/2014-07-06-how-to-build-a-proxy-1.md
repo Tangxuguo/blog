@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "手把手叫你搭建代理(1) 使用Paypal购买VPS"
-tags: [Paypal],[VPS],[BandwagonHost]
+title: 手把手叫你搭建代理(1) 使用Paypal购买VPS
+categories: [学习]
+tags: [Paypal,VPS,BandwagonHost]
 ---
 
 
@@ -28,11 +29,11 @@ tags: [Paypal],[VPS],[BandwagonHost]
 BandwagonHost只支持paypal付款，这里参考[帖子](http://bbs.dgtle.com/thread-136249-1-1.html)
 
 ##注册Paypal
-首先，支付需要paypal国际账户，因为涉及到跨境交易；测试的时候paypal中国贝宝的帐号不行，使用IE，前往www.paypal.com进行账户注册，记得一定是要注册国际账户哦。（我发现根据浏览器的不同，到达paypal.com之后的页面也不同,chrome注册的是贝宝，IE的是paypa））
-<img src="/public/images/posts/how-to-build-a-proxy/Image1.png" >
+首先，支付需要paypal国际账户，因为涉及到跨境交易；测试的时候paypal中国贝宝的帐号不行，使用IE，前往[www.paypal.com](www.paypal.com)进行账户注册，记得一定是要注册国际账户哦。（我发现根据浏览器的不同，到达paypal.com之后的页面也不同,chrome注册的是贝宝，IE的是paypa））
+<img src="/blog/public/images/posts/how-to-build-a-proxy/Image1.png" >
 
 然后，来到这个页面
-<img src="/public/images/posts/how-to-build-a-proxy/Image2.png" >
+<img src="/blog/public/images/posts/how-to-build-a-proxy/Image2.png" >
 选择“中国（全球范围）”，语言就简体中文，
 账户类型就第一种（个人）就好咯。
 用户姓名填自己真实姓名，这个后面还要绑定银行账户，
@@ -42,14 +43,15 @@ BandwagonHost只支持paypal付款，这里参考[帖子](http://bbs.dgtle.com/t
 
 ##绑定银联卡
 然后就绑定银联卡，选择添加银联卡，这里需要注意的是paypal只支持62开头的银联卡
-<img src="/public/images/posts/how-to-build-a-proxy/Image3.png" >
+<img src="/blog/public/images/posts/how-to-build-a-proxy/Image3.png" >
 
 然后就是一系列信息填写，这些都完成之后，我们的账户就完成了。
 
 ##去BandwagonHost完成付款
-然后，登录到BandwagonHost
+然后，登录到[https://bandwagonhost.com/](https://bandwagonhost.com/)
+
 选择付款，在付款的界面选择paypal，选择银联付款，然后就转到我们刚才添加到的网银付款界面，付完就购买成功了
-<img src="/public/images/posts/how-to-build-a-proxy/Image4.png" >
-<img src="/public/images/posts/how-to-build-a-proxy/Image5.png" >
-<img src="/public/images/posts/how-to-build-a-proxy/Image6.png" >
-<img src="/public/images/posts/how-to-build-a-proxy/Image7.png" >
+<img src="/blog/public/images/posts/how-to-build-a-proxy/Image4.png" >
+<img src="/blog/public/images/posts/how-to-build-a-proxy/Image5.png" >
+<img src="/blog/public/images/posts/how-to-build-a-proxy/Image6.png" >
+<img src="/blog/public/images/posts/how-to-build-a-proxy/Image7.png" >
