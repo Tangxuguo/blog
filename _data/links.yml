@@ -1,0 +1,14 @@
+- url: /blog
+  title: 主页
+
+- url: /blog/tags
+  title: 标签
+  
+
+
+
+- url: /blog/guestbook
+  title: 留言 
+  
+- url: /blog/feed.xml
+  title: 订阅 

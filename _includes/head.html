@@ -1,0 +1,58 @@
+<!-- meta information -->
+<meta charset="utf-8">
+<meta name="description" {% if page.title == "Home" %}
+      content="{{ site.data.brume.description }}" {% else %}
+      content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}" {% endif %}>
+<meta name="author" content="{{ site.data.brume.author }}">
+
+<!-- Enable responsiveness on mobile devices-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<!-- title -->
+<title>{{ page.title }} &middot; {{ site.data.brume.name }}</title>
+
+<!-- icons -->
+<link rel="shortcut icon" href="{{site.url}}/public/images/favicon.ico" />
+
+<!-- stylesheets -->
+<link rel="stylesheet" href="{{site.url}}/public/css/responsive.gs.12col.css">
+<link rel="stylesheet" href="{{site.url}}/public/css/animate.min.css">
+<link rel="stylesheet" href="{{site.url}}/public/css/main.css">
+
+<!-- Google fonts -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic&subset=latin-ext">
+
+{% if site.paginate %}
+<!-- font Awesome -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+{% endif %}
+
+<!-- feed links -->
+<link rel="alternate" href="{{ site.url }}/feed.xml" type="application/rss+xml" title="{{ site.name }}">
+
+<!-- Google Authorship and Publisher Markup -->
+<link rel="author" href="https://plus.google.com/102155415257027501910/posts">
+<link rel="publisher" href="https://plus.google.com/102155415257027501910/posts">
+
+<!-- Twitter Cards meta tags -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="http://dzerviniks.com{{ page.url }}">
+<meta name="twitter:title" content="{{ site.data.brume.name }} - {{ page.title }}">
+<meta name="twitter:image" content="{{site.url}}/public/images/logo.png">
+<meta name="twitter:site" content="@aigarsdz">
+
+{% if page.title != 'Home' %}
+<meta property="twitter:description" content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}">
+{% else %}
+<meta property="twitter:description" content="{{ site.data.brume.description }}">
+{% endif %}
+
+<!-- Schema.org meta tags for Google+ -->
+<meta itemprop="name" content="{{ site.data.brume.name }}">
+<meta itemprop="image" content="{{site.url}}/public/images/logo.png">
+
+{% if page.title != 'Home' %}
+<meta itemprop="description" content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}">
+{% else %}
+<meta itemprop="description" content="{{ site.data.brume.description }}">
+{% endif %}

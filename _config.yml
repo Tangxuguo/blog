@@ -1,0 +1,9 @@
+markdown: redcarpet
+pygments: true
+permalink: /:title.html
+timezone: Asia/Chongqing
+
+url: http://Tangxuguo.github.com/blog
+
+redcarpet:
+  extensions: [strikethrough, tables]
