@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ubuntu基本服务配置
+title: centos基本服务配置
 categories: [学习]
 tags: [linux]
 ---
