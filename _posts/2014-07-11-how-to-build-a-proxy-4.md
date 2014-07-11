@@ -8,7 +8,7 @@ tags: [学习]
 
 前面我们购买的VPS是支持pptp的，所以按照以下教程安装即可
 
-这里转载博文http://hengzhang.cn/0323153.html（http://hengzhang.cn/0323153.html）
+这里转载博文[http://hengzhang.cn/0323153.html](http://hengzhang.cn/0323153.html)
 
 一个自动安装PPTP VPN的安装脚本，适用于Debian或Ubuntu系统，支持OpenVZ架构的VPS。
 #1，检查PPP模块
