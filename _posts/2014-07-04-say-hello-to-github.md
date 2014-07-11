@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "搬移到github"
-tags: [Python]
+tags: [生活]
 ---
 
 # Say hello to github 

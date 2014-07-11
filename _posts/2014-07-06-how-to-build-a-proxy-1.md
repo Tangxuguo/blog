@@ -2,7 +2,7 @@
 layout: post
 title: 手把手叫你搭建代理(1) 使用Paypal购买VPS
 categories: [学习]
-tags: [Paypal,VPS,BandwagonHost]
+tags: [学习]
 ---
 
 
