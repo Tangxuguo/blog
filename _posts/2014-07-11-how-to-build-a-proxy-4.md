@@ -2,7 +2,7 @@
 layout: post
 title: 搭建代理(4) 使用VPN（PPTP）
 categories: [学习]
-tags: [学习]
+tags: [代理]
 ---
 
 

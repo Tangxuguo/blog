@@ -2,7 +2,7 @@
 layout: post
 title: 搭建代理(2) 使用shadowsocks提供外网代理
 categories: [学习]
-tags: [学习]
+tags: [代理]
 ---
 
 #安装debian操作系统

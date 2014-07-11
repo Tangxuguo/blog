@@ -2,7 +2,7 @@
 layout: post
 title: 搭建代理(3) 使用cow局域网共享http代理
 categories: [学习]
-tags: [学习]
+tags: [代理]
 ---
 
 

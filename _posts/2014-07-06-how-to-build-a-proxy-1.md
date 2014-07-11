@@ -2,7 +2,7 @@
 layout: post
 title: 搭建代理(1) 使用Paypal购买VPS
 categories: [学习]
-tags: [学习]
+tags: [代理]
 ---
 
 
