@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 手把手叫你搭建代理(3) 使用cow实现socks5代理转http代理
+title: 搭建代理(3) 使用cow实现socks5代理转http代理
 categories: [学习]
 tags: [学习]
 ---

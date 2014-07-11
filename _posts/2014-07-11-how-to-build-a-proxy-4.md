@@ -1,10 +1,12 @@
 ---
 layout: post
-title: 手把手叫你搭建代理(4) 手把手教你搭建梯子（四）使用VPN（PPTP）
+title: 搭建代理(4) 使用VPN（PPTP）
 categories: [学习]
 tags: [学习]
 ---
 
+
+前面我们购买的VPS是支持pptp的，所以按照以下教程安装即可
 
 这里转载博文http://hengzhang.cn/0323153.html（http://hengzhang.cn/0323153.html）
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 手把手叫你搭建代理(2) 使用shadowsocks提供外网代理
+title: 搭建代理(2) 使用shadowsocks提供外网代理
 categories: [学习]
 tags: [学习]
 ---
