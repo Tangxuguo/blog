@@ -16,7 +16,7 @@ LXDE 是一个非常轻量级的图形化桌面环境， 非常适合在小内�
 	apt-get upgrade
 	apt-get dist-upgrade
 	
-	# Install X, LXDE, VNC programs
+	# Install X, LXDE, VNC programs(500M)
 	
 	apt-get install xorg lxde-core tightvncserver
 	
@@ -49,8 +49,13 @@ window下使用 RealVNC，或者[TightVNC](http://www.tightvnc.com/download.html
 
 #附加
 安装额外的包（firefox）
+默认环境中的浏览器使用不喜欢，我们还是喜欢使用FIREFOX火狐浏览器，但是在DEBIAN系统中火狐浏览器叫做iceweasel，我们需要安装。(60M)
 
-	apt-get install firefox
+	apt-get install iceweasel
+如果我们需要登录中文站点，还需要解决中文不乱码问题，就需要支持简体中文语言。(68M)
+
+	apt-get install ttf-arphic-ukai ttf-arphic-uming ttf-arphic-gbsn00lp ttf-arphic-bkai00mp ttf-arphic-bsmi00lp
+	
 修改VNC密码
 
 	vncpasswd

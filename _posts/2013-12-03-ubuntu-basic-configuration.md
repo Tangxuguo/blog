@@ -195,3 +195,43 @@ username为192.168.1.112 机器上的用户，需要输入密码。
 断开连接：
 
 	exitsh
+
+#安装fcitx中文输入法
+
+更新源
+	
+	sudo add-apt-repository ppa:fcitx-team/nightly
+	sudo apt-get update
+
+安装fcitx，搜狗输入法，Google输入法，云输入法，以及设置fcitx为默认。
+
+    sudo apt-get install fcitx fcitx-config-gtk fcitx-sunpinyin fcitx-googlepinyin fcitx-module-cloudpinyin  fcitx-sogoupinyin
+
+    sudo apt-get install fcitx-table-all
+
+    im-switch -s fcitx -z default
+安装完成。。重启一下使设置生效
+
+如果乱码，安装uming字体，继续输入下面命令。
+	
+	sudo apt-get install ttf-arphic-uming
+#安装sublime编辑器 
+
+	sudo add-apt-repository ppa:webupd8team/sublime-text-2
+	sudo apt-get update
+	sudo apt-get install sublime-text-2
+	# or dev version
+	# sudo apt-get install sublime-text-dev
+终端命令调出subime
+	
+	subl
+
+#增加右键打开终端
+
+	sudo apt-get install nautilus-open-terminal
+#修改grub默认启动项
+
+	sudo gedit /boot/grub/grub.cfg
+将文件中的set default="0" 中的0 改成对应欲默认启动的操作系统的序号(从0开始) 。然后保存;
+
+	sudo update-grub
