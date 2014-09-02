@@ -6,6 +6,7 @@ tags: [python]
 由于打算把douban的api接口移植到django，所以采用的是python版sdk
 
 [github地址](https://github.com/douban/douban-client)
+
 这是一份简单的新手指南
 
 ###一、安装douban-client
@@ -26,7 +27,10 @@ tags: [python]
 ###三、运行demo
 
 1.去豆瓣创建一个新应用
-应用名称，简介随便填，应用地址填你希望的地址www.xxxx.com，回调地址是douban授权通过后返回的地址，可以填你希望的地址www.xxxx.com，如果你要本地调试的话，可以自己见一个轻量级的http服务器（这里我使用django），
+应用名称，简介随便填，
+应用地址填你希望的地址www.xxxx.com，
+回调地址是douban授权通过后返回的地址，可以填你希望的地址www.xxxx.com，
+如果你要本地调试的话，可以自己见一个轻量级的http服务器（这里我使用django），
 然后在hosts文件里修改
 
 	127.0.0.1 www.xxxx.com
@@ -43,7 +47,7 @@ tags: [python]
 运行测试可能不通过，报错
 
 	DoubanAPIError: ***400 (Bad Request)*** {u'msg': u'invalid_credencial1', u'code': 108, u'request': u'GET /v2/movie/celebrity/1053585'}
-去网站http://developers.douban.com/wiki/?title=api_v2找到自己需要的权限，加到scope里面，如果添加成功，会在授权页出现
+去[豆瓣开发平台网站](http://developers.douban.com/wiki/?title=api_v2)找到自己需要的权限，加到scope里面，如果添加成功，会在授权页出现
 
 <img src="/blog/public/images/posts/douban/doubanapi2.png" >
 一些权限仅供参考
