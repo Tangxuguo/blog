@@ -70,7 +70,8 @@ http://listview.sinaapp.com:8000/depotapp/store/?code=43695fd50fea85db
 [地址]( http://developers.douban.com/wiki/?title=oauth2)
 
 基本流程是
-1.获取authorization_code，
+
+#####1.获取authorization_code，
 
 根据client_id，client_secret，redirect_uri，grant_type，code
 构造类似如下地址
@@ -87,7 +88,7 @@ HTTP GET方式请求
 
 	https://www.example.com/back?code=9b73a4248
 
-2.获取access_token
+#####2.获取access_token
 根据上面获取的code
 构造类似如下地址
 
@@ -108,7 +109,7 @@ HTTP POST方式请求
 	  "douban_user_id":"1221"
 	}
 
-3，使用access_token
+#####3，使用access_token
 
 利用上一步给的access_token，以GET的方式提交。
 这里注意一点，提交的时候要把access_token加入Headers提交，而不是加到url里以参数方式提交，貌似新浪支持url，豆瓣不支持。
@@ -118,7 +119,7 @@ HTTP POST方式请求
 
 另外需要注意一下，是https还是http。
 
-4,更新access_token
+#####4,更新access_token
 
 此请求必须是HTTP POST方式，refresh_token只有在access_token过期时才能使用，并且只能使用一次。refresh_token在我们上面获取到的access_token下面。当换取到的access_token再次过期时，使用新的refresh_token来换取access_token
 
