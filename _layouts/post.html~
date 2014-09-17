@@ -7,6 +7,7 @@ layout: default
 
 
 <article  class="single row gutters">
+	<!-- <article  class="single row gutters"> </article>-->
 	<div id="main" class="span9">
   <!-- the following show the post time on the top of post title-->
   <!--*<time class="published" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_long_string }}</time>-->
@@ -15,7 +16,7 @@ layout: default
 
   {% include comments.html %}
   </div>
-</article>
+
 <script>
 $(function() {
     $('#main').sideMenu({
