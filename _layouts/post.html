@@ -20,10 +20,13 @@ layout: default
 
 
 <script>
-$(function() {
-    $('#main').sideMenu({
-    container: '#menu',
-    hs: ['h2', 'h3', 'h4', 'h5']
-});
-});
-</script>
+    $(function() {
+      var $use = $('#useSideMenu');
+      $use.click(function() {
+        $('#main').sideMenu({
+          container: '#menu'
+        });
+        $use.replaceWith($use.text());
+      });
+    });
+    </script>

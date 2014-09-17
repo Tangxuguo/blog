@@ -6,7 +6,8 @@ layout: default
 <script type="text/javascript"  src="{{site.url}}/public/js/jquery.side.menu.js"></script>
 
 
-<article  class="single row gutters">
+
+
 	<!-- <article  class="single row gutters"> </article>-->
 	<div id="main" class="span9">
   <!-- the following show the post time on the top of post title-->
@@ -16,6 +17,7 @@ layout: default
 
   {% include comments.html %}
   </div>
+
 
 <script>
 $(function() {
