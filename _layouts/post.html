@@ -5,7 +5,7 @@ layout: default
 <script type="text/javascript"  src="{{site.url}}/public/js/jquery.min.js"></script>
 <script type="text/javascript"  src="{{site.url}}/public/js/jquery.side.menu.js"></script>
 
-
+<div id="menu"></div>
 
 
 	<!-- <article  class="single row gutters"> </article>-->
@@ -20,13 +20,9 @@ layout: default
 
 
 <script>
-    $(function() {
-      var $use = $('#useSideMenu');
-      $use.click(function() {
-        $('#main').sideMenu({
-          container: '#menu'
-        });
-        $use.replaceWith($use.text());
-      });
+    $(function () {
+    $('#main').sideMenu({
+        container: '#menu'
     });
+});
     </script>
