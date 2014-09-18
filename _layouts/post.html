@@ -2,7 +2,23 @@
 layout: default
 ---
 
-
+ <link rel="stylesheet" href="{{site.url}}/public/css/side-menu.css" />
+ <style>
+        .side-menu {
+            width: 250px;
+            top: 50px;
+            right: 0;
+        }
+ </style>
+<script type="text/javascript"  src="{{site.url}}/public/js/jquery.min.js"></script>
+<script type="text/javascript"  src="{{site.url}}/public/js/jquery.side.menu.js"></script>
+<script>
+        $(function () {
+            $('#main').sideMenu({
+                hs: ['h1', 'h3']
+            });
+        });
+</script>
 <div id="menu"></div>
 
 
