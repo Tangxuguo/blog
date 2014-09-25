@@ -12,7 +12,9 @@ tags: [python]
 http上使用了执行效率更高的nginx+uwsgi。
 #安装
 ###安装编译环境
-	yum install python-devel libxml2  libxml2-devel  python-setuptools  zlib-devel wget openssl-devel pcre pcre-devel sudo gcc make autoconf automake
+	yum install python-devel libxml2  libxml2-devel  python-setuptools  
+	zlib-devel wget openssl-devel pcre pcre-devel sudo 
+	gcc make autoconf automake
 ###安装python
 这里我使用了python2.7.5，也是系统默认版本。本来想使用virtualenv，但是装好django一直报错，作罢
 ###安装pip
@@ -27,6 +29,7 @@ http上使用了执行效率更高的nginx+uwsgi。
 	cd Django-1.4.1
 	python setup.py install
 创建项目
+
 	cd /srv/www/
 	django-admin.py startproject depot
 
@@ -188,6 +191,7 @@ nginx默认源里没有
 
 	nginx -s  reload
 重启后检查Nginx日志是否有异常。
+
 2.启动uWSGI服务器
 
 
@@ -199,10 +203,12 @@ nginx默认源里没有
 基于上面的假设你的域名是book.peqiu.com
 
 因此，我们访问 book.peqiu.com，如果发现程序与 单独使用Django启动的程序一模一样时，就说明成功啦！
+
 4.关闭服务的方法
 
 将uWSGi进程杀死即可。
 
 整个系统运行内存大概在100M左右
 #参考资料：
+大部分来自django-china.cn，感谢
 http://django-china.cn/topic/124/
