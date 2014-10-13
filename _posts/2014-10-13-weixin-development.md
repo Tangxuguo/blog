@@ -22,9 +22,11 @@ django\_weixin\_portal功能非常强大，具体你可以去官网上看，他�
 
 	yum install python-devel libxml2  libxml2-devel  python-setuptools  
 	zlib-devel wget openssl-devel pcre pcre-devel sudo 
-	gcc make autoconf automake vim
+	gcc make autoconf automake vim git
 安装
-	
+
+	git clone https://github.com/wwj718/django_weixin_portal.git
+	cd django_weixin_portal
 	pip install -r requlirements.txt
 后台帐号:admin . 密码：admin 
 
@@ -69,12 +71,13 @@ weixin2py是另一个非常强大的框架，最近也进行了一次更新，�
 
 	yum install python-devel libxml2  libxml2-devel  python-setuptools  
 	zlib-devel wget openssl-devel pcre pcre-devel sudo 
-	gcc make autoconf automake vim
+	gcc make autoconf automake vim git
 安装
-
+	git clone https://github.com/winkidney/weixin2py.git
 	pip install django==1.5
 	cd weixin2py
 	python setup.py install
+	cd weixin2py
 	python rebuild_db.py
 如果报错django.setup(),注释掉
 
