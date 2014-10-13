@@ -14,7 +14,7 @@ tags: [Django]
  * [weixin2py](https://github.com/winkidney/weixin2py)
  
 ###[django\_weixin\_portal](https://github.com/wwj718/django_weixin_portal)
-django_weixin_portal功能非常强大，具体你可以去官网上看，他采用了亿米CH开源的第三方微信开发者账号管理平台，在上面做了一些应用，按照它的安装说明是能跑通的，我的是在digitalocean上跑的centos7x64。github有很教程
+django\_weixin\_portal功能非常强大，具体你可以去官网上看，他采用了亿米CH开源的第三方微信开发者账号管理平台，在上面做了一些应用，按照它的安装说明是能跑通的，我的是在digitalocean上跑的centos7x64。github有很教程
 这里需要注意的是：
 
  * 它要求django版本是1.6，我在1.5和1.7版本上跑是有问题的
