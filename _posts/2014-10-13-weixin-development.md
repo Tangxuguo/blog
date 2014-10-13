@@ -10,10 +10,10 @@ tags: [Django]
 
 在github搜索django weixin，你会发现二个特别火
 
- * [django_weixin_portal](https://github.com/wwj718/django_weixin_portal)
+ * [django\_weixin\_portal](https://github.com/wwj718/django_weixin_portal)
  * [weixin2py](https://github.com/winkidney/weixin2py)
  
-###[django_weixin_portal](https://github.com/wwj718/django_weixin_portal)
+###[django\_weixin\_portal](https://github.com/wwj718/django_weixin_portal)
 django_weixin_portal功能非常强大，具体你可以去官网上看，他采用了亿米CH开源的第三方微信开发者账号管理平台，在上面做了一些应用，按照它的安装说明是能跑通的，我的是在digitalocean上跑的centos7x64。github有很教程
 这里需要注意的是：
 
@@ -49,10 +49,12 @@ weixin2py是另一个非常强大的框架，最近也进行了一次更新，�
 后台事件处理
 <img src="/blog/public/images/posts/weixin/weixin7.png" >
 
-后台文本处理，支持正则匹配吗，插件
+后台文本处理，支持正则匹配，插件
 <img src="/blog/public/images/posts/weixin/weixin8.png" >
 
 说完这两个再介绍个有意思的
+
+###littlesnail
 
 基于有道翻译和django开发的微信应用
 
