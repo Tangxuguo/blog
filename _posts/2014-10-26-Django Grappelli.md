@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Django Grappelli，一款非常漂亮的admin界面app"
+title: "Django Grappelli，非常漂亮的admin界面"
 tags: [Django]
 ---
 
