@@ -3,10 +3,7 @@ layout: post
 title: "Django Grappelli，非常漂亮的admin界面"
 tags: [Django]
 ---
-
-Django Grappelli
-================
-想必你一定觉得django的界面丑爆了吧，没关系，我们有很好的app，完美替代原来的界面，grappelli这是一样一个非常漂亮的admin管理界面
+想必你一定觉得django的admin界面丑爆了吧，没关系，我们有很好的app可以完美替代原来的界面，grappelli这样一个非常漂亮的admin管理界面
 
     **A jazzy skin for the Django admin interface**.
 
@@ -85,7 +82,7 @@ Django Grappelli
 
 在TEMPLATE_CONTEXT_PROCESSORS增加request context processor，这样就可以找到你定义好的模版
 
-TEMPLATE_CONTEXT_PROCESSORS = (
+	TEMPLATE_CONTEXT_PROCESSORS = (
     ...
     "django.core.context_processors.request",
 )
