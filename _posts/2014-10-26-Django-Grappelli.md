@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Django Grappelli，非常漂亮的admin界面"
+title: "django-grappelli，非常漂亮的admin界面"
 tags: [Django]
 ---
 想必你一定觉得django的admin界面丑爆了吧，没关系，我们有很好的app可以完美替代原来的界面，grappelli这样一个非常漂亮的admin管理界面
@@ -106,3 +106,11 @@ tags: [Django]
 <img src="/blog/public/images/posts/grappelli/grappelli2.png" >
 <img src="/blog/public/images/posts/grappelli/grappelli3.png" >
 <img src="/blog/public/images/posts/grappelli/grappelli4.png" >
+
+#参考网址
+
+https://github.com/sehmaschine/django-grappelli/
+
+http://django-grappelli.readthedocs.org/
+
+http://grappelliproject.com/
