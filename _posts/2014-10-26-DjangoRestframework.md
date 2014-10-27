@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "djangorestframework，简单好用的restframework"
+title: "简单好用的djangorestframework"
 tags: [Django]
 ---
 # RESTFRAMEWORK
