@@ -133,7 +133,17 @@ footer{
 	font-size:.8rem;
 	text-align:center
 	}
-	
+
+footer .linkings {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 100%;
+  display: block;
+  border: none;
+  line-height: 140%;
+}	
 .azul a{
 	color:#0070bb
 	}
