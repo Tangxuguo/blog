@@ -3,7 +3,7 @@ layout: post
 title: "[推荐]看过的几本淘宝系的书"
 tags: [读书]
 ---
-
+#
 + [人人都是产品经理](http://book.douban.com/subject/4723970/), 苏杰,互联网产品入门及产品狗养成攻略
 + [淘宝技术这十年](http://book.douban.com/subject/24335672/), 子柳,了解淘宝技术架构变革及牛人牛事
 + [深入理解nginx](http://book.douban.com/subject/22793675/), 陶辉,不错的源码分析,可以边看代码边看书
