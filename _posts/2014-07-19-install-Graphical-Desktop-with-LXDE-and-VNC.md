@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "使用LXDE和VNC在小内存VPS安装图形化桌面"
+title: "使用LXDE和VNC在小内存VPS安装图形桌面"
 tags: [linux]
 ---
 
