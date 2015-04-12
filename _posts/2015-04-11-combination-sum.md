@@ -12,27 +12,27 @@ DFS和回朔法
 
 	class Solution {
 	public:
-    vector<vector<int> > combinationSum(vector<int> &candidates, int target) {
-        vector<vector<int>> result;
-        vector<int> path;
-        sort(candidates.begin(), candidates.end());
-        combinationSumHelper(result, path, 0, candidates, target);
-        return result;
-    }
-    void combinationSumHelper(vector<vector<int>> &result, vector<int> &path, int pos, vector<int> &candidates, int target){
-        if(accumulate(path.begin(),path.end(), 0)== target){
-            result.push_back(path);
-            return;
-        }
-        if(accumulate(path.begin(),path.end(), 0)> target){
-            return;
-        }
-        for(int i = pos; i < candidates.size(); i++){
-            path.push_back(candidates[i]);
-            combinationSumHelper(result, path, i, candidates, target);
-            path.pop_back();
-        }
-    }
+	    vector<vector<int> > combinationSum(vector<int> &candidates, int target) {
+	        vector<vector<int>> result;
+	        vector<int> path;
+	        sort(candidates.begin(), candidates.end());
+	        combinationSumHelper(result, path, 0, candidates, target);
+	        return result;
+	    }
+	    void combinationSumHelper(vector<vector<int>> &result, vector<int> &path, int pos, vector<int> &candidates, int target){
+	        if(accumulate(path.begin(),path.end(), 0)== target){
+	            result.push_back(path);
+	            return;
+	        }
+	        if(accumulate(path.begin(),path.end(), 0)> target){
+	            return;
+	        }
+	        for(int i = pos; i < candidates.size(); i++){
+	            path.push_back(candidates[i]);
+	            combinationSumHelper(result, path, i, candidates, target);
+	            path.pop_back();
+	        }
+	    }
 	};
 
    
