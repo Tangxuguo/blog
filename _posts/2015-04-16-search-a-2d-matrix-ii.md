@@ -5,6 +5,7 @@ tags: [算法]
 ---
 
 >http://lintcode.com/en/problem/search-a-2d-matrix-ii/	
+
 表面上看起来很难，其实知道思想很简单，注意按对角线搜索，这里从左下方往右上方搜索，另外是特殊值处理
 	
 	class Solution {
