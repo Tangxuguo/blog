@@ -7,6 +7,8 @@ tags: [算法]
 > http://www.lintcode.com/en/problem/find-minimum-in-rotated-sorted-array/
 
 
+解法一：循环遍历,复杂度 O(n)
+
 	class Solution {
 	public:
 	    /**
@@ -28,5 +30,30 @@ tags: [算法]
 	                return num[i];
 	            }
 	        }
+	    }
+	};
+
+解法二：二分法，复杂度O(log2n)
+
+	class Solution {
+	public:
+	    int findMin(vector<int>& nums) {
+	        int start = 0;
+	        int end = nums.size()-1;
+	        int mid;
+	        while (start+1 < end) {
+	            mid =  start + (end - start)/2;
+	            if (nums[start] <= nums[end]) {
+	                return nums[start];                
+	            }
+	            else if (nums[start] > nums[end]) {
+	                if (nums[mid] >= nums[start] && nums[mid] >= nums[end]) {
+	                    start = mid;   
+	                } else { end = mid; }
+	            }
+	        }
+	        if (nums[start] < nums[end]) {
+	            return nums[start];
+	        } else { return nums[end];} 
 	    }
 	};
