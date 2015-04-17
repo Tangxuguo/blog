@@ -4,7 +4,8 @@ title: "search-in-rotated-sorted-array"
 tags: [算法]
 ---
 
->http://lintcode.com/en/problem/search-in-rotated-sorted-array/	
+>http://lintcode.com/en/problem/search-in-rotated-sorted-array/
+	
 先给出一个O(n)的解法
 
 	class Solution {
@@ -72,5 +73,7 @@ tags: [算法]
 	        return -1;
 	    }
 	};
+
+<img src="/blog/public/images/posts/code/sort-array.png" >
 
 参考 http://fisherlei.blogspot.com/2013/01/leetcode-search-in-rotated-sorted-array.html
