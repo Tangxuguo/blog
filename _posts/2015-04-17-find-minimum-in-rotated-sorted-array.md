@@ -43,7 +43,7 @@ tags: [算法]
 	        int mid;
 	        while (start+1 < end) {
 	            mid =  start + (end - start)/2;
-	            if (nums[start] <= nums[end]) {
+	            if (nums[start] < nums[end]) {
 	                return nums[start];                
 	            }
 	            else if (nums[start] > nums[end]) {
