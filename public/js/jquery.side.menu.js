@@ -72,29 +72,17 @@
 					nums = [],
 					index;
 				
-<<<<<<< HEAD
-				console.log(name);
-				console.log(nums);
+
+
 				if (level - preLevel > 1) {
 					return;
 				}
 
-=======
-				if (level - preLevel > 1) {
-					return;
-				}
->>>>>>> parent of 4e3d072... test
 				if (!counts.hasOwnProperty(name) || level - preLevel === 1) {
 					counts[name] = 0;
 				}
 				counts[name]++;
-<<<<<<< HEAD
-				console.log(counts);
-				console.log(counts[i]);
-				console.log(i);
-=======
-				
->>>>>>> parent of 4e3d072... test
+
 				$.each(counts, function(i) {
 					nums.push(counts[i]);
 					if (nums.length === level) {
@@ -215,6 +203,6 @@
 
 	$.fn.sideMenu.defaults = {
 		container: 'body',
-		hs: ['h2', 'h3', 'h4']
+		hs: ['h2','h2', 'h3', 'h4']
 	};
 })(jQuery);
