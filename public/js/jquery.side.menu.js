@@ -72,11 +72,12 @@
 					nums = [],
 					index;
 				
+				console.log(name);
+				console.log(nums);
 				if (level - preLevel > 1) {
 					return;
 				}
-				console.log(name);
-				console.log(nums);
+
 				if (!counts.hasOwnProperty(name) || level - preLevel === 1) {
 					counts[name] = 0;
 				}
