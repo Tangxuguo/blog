@@ -72,19 +72,29 @@
 					nums = [],
 					index;
 				
+<<<<<<< HEAD
 				console.log(name);
 				console.log(nums);
 				if (level - preLevel > 1) {
 					return;
 				}
 
+=======
+				if (level - preLevel > 1) {
+					return;
+				}
+>>>>>>> parent of 4e3d072... test
 				if (!counts.hasOwnProperty(name) || level - preLevel === 1) {
 					counts[name] = 0;
 				}
 				counts[name]++;
+<<<<<<< HEAD
 				console.log(counts);
 				console.log(counts[i]);
 				console.log(i);
+=======
+				
+>>>>>>> parent of 4e3d072... test
 				$.each(counts, function(i) {
 					nums.push(counts[i]);
 					if (nums.length === level) {
@@ -92,7 +102,7 @@
 					}
 				});
 				index = nums.join('.');
-				console.log(index);
+				
 				$div = $('<div id="sideMenuTitle' + index + '" class="side-menu-affix"></div>');
 				$div.insertAfter($this).append($this);
 				
@@ -106,7 +116,6 @@
 					'</a>'
 				].join(''));
 				preLevel = level;
-				console.log(preLevel);
 			});
 			$(this.options.container).append(this.$menu);
 		},
@@ -206,6 +215,6 @@
 
 	$.fn.sideMenu.defaults = {
 		container: 'body',
-		hs: ['h1','h2', 'h3', 'h4']
+		hs: ['h2', 'h3', 'h4']
 	};
 })(jQuery);
