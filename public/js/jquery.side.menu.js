@@ -72,7 +72,7 @@
 					nums = [],
 					index;
 				
-				if (level - preLevel > =1) {
+				if (level - preLevel > 1) {
 					return;
 				}
 				console.log(name);
