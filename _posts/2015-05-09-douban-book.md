@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "为博客加上豆瓣读书的书单"
-tags: [网络编程]
+tags: [生活]
 ---
 
 前段时间一直在找douban图书的js代码，一直没找到，今天心血来潮，翻了一下自己博客的js代码库，发现自带了douban api库，搜了一下，找到了[pexcn的主题](https://github.com/pexcn/Jekyll-Light)于是搞起来吧.
