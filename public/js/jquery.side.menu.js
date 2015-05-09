@@ -68,21 +68,18 @@
 					$div,
 					name = $this[0].localName,
 					title = $this.text(),
-					level = $.inArray(name, that.options.hs) ,
+					level = $.inArray(name, that.options.hs) + 1,
 					nums = [],
 					index;
 				
-
-
 				if (level - preLevel > 1) {
 					return;
 				}
-
 				if (!counts.hasOwnProperty(name) || level - preLevel === 1) {
 					counts[name] = 0;
 				}
 				counts[name]++;
-
+				
 				$.each(counts, function(i) {
 					nums.push(counts[i]);
 					if (nums.length === level) {
@@ -203,6 +200,6 @@
 
 	$.fn.sideMenu.defaults = {
 		container: 'body',
-		hs: ['h2','h2', 'h3', 'h4']
+		hs: ['h2', 'h3', 'h4']
 	};
 })(jQuery);
