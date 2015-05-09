@@ -4,13 +4,10 @@
 - url: /blog/tags
   title: 标签
 
-- url: /blog/page/timing.html
-  title: 时间轴
-
 - url: /
   title: 关于 
 
-- url: /blog/page/read.html
+- url: /blog/pages/read.html
   title: 阅读 
 
 - url: /blog/pages/guestbook.html
