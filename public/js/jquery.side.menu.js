@@ -68,7 +68,7 @@
 					$div,
 					name = $this[0].localName,
 					title = $this.text(),
-					level = $.inArray(name, that.options.hs) + 1,
+					level = $.inArray(name, that.options.hs) ,
 					nums = [],
 					index;
 				
@@ -82,6 +82,8 @@
 				}
 				counts[name]++;
 				console.log(counts);
+				console.log(counts[i]);
+				console.log(i);
 				$.each(counts, function(i) {
 					nums.push(counts[i]);
 					if (nums.length === level) {
