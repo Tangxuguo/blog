@@ -10,8 +10,5 @@
 - url: /blog/pages/read.html
   title: 阅读 
 
-- url: /blog/pages/guestbook.html
-  title: 留言 
-
 - url: /blog/pages/feed.xml
   title: 订阅 
