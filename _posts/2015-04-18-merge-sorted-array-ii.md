@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "merge-sorted-array"
+title: "merge-sorted-array-ii"
 tags: [算法]
 ---	
 	
->http://lintcode.com/en/problem/merge-sorted-array/
+>http://lintcode.com/en/problem/merge-sorted-array-ii/
 	
 	class Solution {
 	public:
@@ -52,3 +52,37 @@ tags: [算法]
 	        return result;
 	    }
 	};
+	
+	
+	
+	class Solution {
+	public:
+	    /**
+	     * @param A and B: sorted integer array A and B.
+	     * @return: A new sorted integer array
+	     */
+	    vector<int> mergeSortedArray(vector<int> &A, vector<int> &B) {
+	        // write your code here
+	        int m = 0;
+	        int n = 0;
+	        vector<int> result;
+	        while (m < A.size() && n < B.size()) {
+	            if (A[m] <= B[n]) {
+	                result.push_back(A[m++]);
+	            }
+	            else {
+	                result.push_back(B[n++]);
+	            }
+	        }
+	        while (m < A.size()) {
+	            result.push_back(A[m++]);
+	        }
+	        while (n < B.size()) {
+	            result.push_back(B[n++]);
+	        }
+	        return result;
+	    }
+	};
+	
+	
+	
