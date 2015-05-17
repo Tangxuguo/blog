@@ -1,0 +1,41 @@
+---
+layout: default
+title: Home
+---
+
+<script type="text/javascript"  src="/blog/public/js/jquery.min.js"></script>
+
+<section class="archive">
+{% for leetcode in site.leetcodes %}
+{% unless leetcode.next %}
+
+{% unless forloop.first %}</div></div>{% endunless %}
+
+  <div class="bundle row gutters fadeInDown animated">
+    <h2 class="post-year col span_2">{{ leetcode.date | date: '%Y' }}</h2>
+    <div class="posts-by-year col span_10">
+
+{% else %}
+{% capture year %}{{ leetcode.date | date: '%Y' }}{% endcapture %}
+{% capture nyear %}{{ leetcode.next.date | date: '%Y' }}{% endcapture %}
+{% if year != nyear %}
+
+{% unless forloop.first %}</div></div>{% endunless %}
+
+  <div class="bundle row gutters fadeInDown animated">
+    <h2 class="post-year col span_2">{{ leetcode.date | date: '%Y' }}</h2>
+    <div class="posts-by-year col span_10">
+{% endif %}
+{% endunless %}
+
+  <article class="row gutters">
+    <a href="{{ site.url }}{{ leetcode.url }}" title="{{ leetcode.title }}" class="col span_8">{{ leetcode.title }}</a>
+    <div class="post-date col span_4">
+      <time datetime="{{ leetcode.date | date: '%Y-%m-%d' }}">{{ leetcode.date | date: "%-d %B" }}</time>
+    </div>
+  </article>
+
+{% if forloop.last %}</div></div>{% endif %}
+
+{% endfor %}
+</section>
