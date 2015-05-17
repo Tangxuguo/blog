@@ -10,5 +10,5 @@
 - url: /blog/pages/read.html
   title: 读书 
 
-- url: /blog/pages/al.html
-  title: leetcode 
+- url: /blog/pages/feed.xml
+  title: 订阅 
