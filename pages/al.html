@@ -6,32 +6,32 @@ title: Home
 <script type="text/javascript"  src="/blog/public/js/jquery.min.js"></script>
 
 <section class="archive">
-{% for leetcode in site.leetcodes %}
-{% unless leetcode.next %}
+{% for post in site.leetcodes %}
+{% unless post.next %}
 
 {% unless forloop.first %}</div></div>{% endunless %}
 
   <div class="bundle row gutters fadeInDown animated">
-    <h2 class="post-year col span_2">{{ leetcode.date | date: '%Y' }}</h2>
+    <h2 class="post-year col span_2">{{ post.date | date: '%Y' }}</h2>
     <div class="posts-by-year col span_10">
 
 {% else %}
-{% capture year %}{{ leetcode.date | date: '%Y' }}{% endcapture %}
-{% capture nyear %}{{ leetcode.next.date | date: '%Y' }}{% endcapture %}
+{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
 {% if year != nyear %}
 
 {% unless forloop.first %}</div></div>{% endunless %}
 
   <div class="bundle row gutters fadeInDown animated">
-    <h2 class="post-year col span_2">{{ leetcode.date | date: '%Y' }}</h2>
+    <h2 class="post-year col span_2">{{ post.date | date: '%Y' }}</h2>
     <div class="posts-by-year col span_10">
 {% endif %}
 {% endunless %}
 
   <article class="row gutters">
-    <a href="{{ site.url }}{{ leetcode.url }}" title="{{ leetcode.title }}" class="col span_8">{{ leetcode.title }}</a>
+    <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" class="col span_8">{{ post.title }}</a>
     <div class="post-date col span_4">
-      <time datetime="{{ leetcode.date | date: '%Y-%m-%d' }}">{{ leetcode.date | date: "%-d %B" }}</time>
+      <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%-d %B" }}</time>
     </div>
   </article>
 
