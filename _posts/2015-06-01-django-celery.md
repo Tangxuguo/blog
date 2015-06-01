@@ -8,8 +8,11 @@ tags: [django]
 django-celery就这这样一种实现后台异步执行模块
 
 网上常用的组合：
+
  django：web框架；
+ 
  RabbitMQ：消息队列系统，负责存储消息；
+ 
  celery：worker进程，同时提供在webapp中创建任务的功能。
 
 在这里我们并不打算使用RabbitMQ，而是采用DJANGO自带的消息处理
@@ -26,17 +29,17 @@ django-celery就这这样一种实现后台异步执行模块
 国外写的比较好的教程：
 
 1. [FIRST STEPS WITH CELERY: HOW TO NOT TRIP](http://hairycode.org/2013/07/23/first-steps-with-celery-how-to-not-trip/)
+2. [Configuration and defaults](http://docs.celeryproject.org/en/latest/configuration.html#std:setting-CELERY_IMPORTS)
 
 可以参考，其他的还是看官方文档吧
 
 1. [First steps with Django](http://docs.celeryproject.org/en/latest/django/first-steps-with-django.html#using-celery-with-django)
-2. 
 
 有点出入的一个是配置文件，配置文件的路径要注意，根目录是项目所在目录。另外需要首先实例化一个celery，除此之外一定要启动celery，后台如果发现没有调用worker就要查下配置文件了，这里官方推荐的是采用配置文件的形式而不是都写到setting文件里，另外需要注意环境变量，在celery启动的时候需要先加载环境变量
 	
 	os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'reservation.settings')
 
-启动celery命令,中间的时celerytask.tasks根据自己的文件自己改
+启动celery命令,中间的'celerytask.tasks'根据自己的文件自己改
 
 	$ celery -A celerytask.tasks worker -l info
 	
@@ -55,7 +58,6 @@ tasks.py
 	from django.conf import settings
 	
 	os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'reservation.settings')
-	#os.environ['CELERY_CONFIG_MODULE'] = 'celerytask.celeryconfig'
 	app = Celery('test')
 	# Using a string here means the worker will not have to
 	# pickle the object when using Windows.
@@ -120,3 +122,5 @@ view.py 写了一个简单的视图函数
 	
 	from celerytask.views import Hello
 	urlpatterns += patterns('',url(r'^celery/',Hello.as_view()),)
+	
+访问的时候如果终端里面的worker有接受任务，并且浏览器很快返回，管理界面有消息记录就成功了，如果没有对照官方文档检查配置
