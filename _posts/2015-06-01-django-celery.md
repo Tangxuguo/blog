@@ -29,11 +29,12 @@ django-celery就这这样一种实现后台异步执行模块
 国外写的比较好的教程：
 
 1. [FIRST STEPS WITH CELERY: HOW TO NOT TRIP](http://hairycode.org/2013/07/23/first-steps-with-celery-how-to-not-trip/)
-2. [Configuration and defaults](http://docs.celeryproject.org/en/latest/configuration.html#std:setting-CELERY_IMPORTS)
+
 
 可以参考，其他的还是看官方文档吧
 
 1. [First steps with Django](http://docs.celeryproject.org/en/latest/django/first-steps-with-django.html#using-celery-with-django)
+2. [Configuration and defaults](http://docs.celeryproject.org/en/latest/configuration.html#std:setting-CELERY_IMPORTS)
 
 有点出入的一个是配置文件，配置文件的路径要注意，根目录是项目所在目录。另外需要首先实例化一个celery，除此之外一定要启动celery，后台如果发现没有调用worker就要查下配置文件了，这里官方推荐的是采用配置文件的形式而不是都写到setting文件里，另外需要注意环境变量，在celery启动的时候需要先加载环境变量
 	
