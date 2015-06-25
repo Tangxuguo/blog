@@ -166,17 +166,40 @@ requests可以模拟正常浏览器的访问，设置cookies，sessions，这样
 
 因为我们需要一个像人类使用的用户名，你也不想你注册的名字像test0001，test0002，test0003，test0004，这么老土吧
 
-	1. 用户名
-		最近很多网站泄露出来了很多用户账户数据库，比如CSDN600万，找一个数据库，获取到用户名和密码，作为我们的账号字典，下载地址请谷歌
-	2. 邮箱验证
-		这个问题有点麻烦
-		如果你要注册的网站不使用邮箱认证的话还好，直接填上面数据库中的邮箱，如果使用了邮箱的话，就要想办法了
-		1. 采用自己的域名，可以生成无数的邮箱，自己控制，这种方法一般很容易被发现
-		2. 另一种方法就是去批量注册163，sina等邮箱，这种方式一般难度较大，那些邮箱验证码也是很难破的
-		3. 还有一种方式就是用钱，淘宝上买吧
-	3. 姓名和身份证
-		这个一般不需要，遇到一些需要实名认证的可能需要
-		解决办法，目前网上有很多流传出来的姓名和身份证，可以爬一下
+1. 用户名
+	最近很多网站泄露出来了很多用户账户数据库，比如CSDN600万，猫扑1000万，找一个数据库，获取到用户名和密码，作为我们的账号字典，
+	
+	下载地址请谷歌
+	
+	导入方法谷歌到的
+	
+	[某社区600万用户数据导入MYSQL、MSSQL、Oracle数据库方法](http://www.cnblogs.com/xwdreamer/archive/2012/06/08/2541678.html)
+	
+	在这里我们使用Mysql，使用Myisam引擎，UTF8编码，新建一个数据库名字为user，在其中建一个csdnuser表
+	
+
+		CREATE TABLE `csdnuser` (
+		 `id` int(11) NOT NULL AUTO_INCREMENT,
+		 `username` varchar(255) DEFAULT NULL,
+		 `password` varchar(255) DEFAULT NULL,
+		 `email` varchar(255) DEFAULT NULL,
+		 PRIMARY KEY (`id`)
+		) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+		
+	导入数据方法
+	
+		load data local infile 'd:\\www.csdn.net.sql' into table csdnuser2 fields terminated by ' # ' (username,password,email);
+
+	
+2. 邮箱验证
+	这个问题有点麻烦
+	如果你要注册的网站不使用邮箱认证的话还好，直接填上面数据库中的邮箱，如果使用了邮箱的话，就要想办法了
+	1. 采用自己的域名，可以生成无数的邮箱，自己控制，这种方法一般很容易被发现
+	2. 另一种方法就是去批量注册163，sina等邮箱，这种方式一般难度较大，那些邮箱验证码也是很难破的
+	3. 还有一种方式就是用钱，淘宝上买吧
+3. 姓名和身份证
+	这个一般不需要，遇到一些需要实名认证的可能需要
+	解决办法，目前网上有很多流传出来的姓名和身份证，可以爬一下
 	
 
 ##验证码破解
@@ -193,4 +216,15 @@ requests可以模拟正常浏览器的访问，设置cookies，sessions，这样
 	但是这个验证码不同网站难度不一样，
 		1. 简单的可以使用基于google的光学字符识别Tesseract-OCR和Cuneiform的[PyOCR](https://github.com/jflesch/pyocr)
 		2. 复杂的可以使用基于SVM算法的[captchacker](https://github.com/bratao/captchacker)
+		
+		以下在ubuntu12.04下测试
+		
+		安装wxpython
+		sudo apt-get install python-wxgtk2.8 python-wxtools wx2.8-i18n libwxgtk2.8-dev libgtk2.0-dev
+		安装libsvm
+		sudo apt-get install python-libsvm
+		安装opencv
+		sudo apt-get install libopencv-dev python-opencv
+		
+		
 
