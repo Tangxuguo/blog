@@ -13,7 +13,7 @@ tags: [Django]
 3. 模板页面安排
 	http://www.weiguda.com/blog/14/
 4. 实现表格单双不同颜色
-5. 多表查询及反向查询
+5. 多表查询及反向查询，反向查询方式
    http://my.oschina.net/u/993130/blog/209460
 6. 邮箱通知，模板制作及渲染-mail
 	http://blog.csdn.net/yima1006/article/details/8991145
@@ -40,3 +40,13 @@ tags: [Django]
 	http://blog.feshine.net/technology/1220.html
 20. 虚拟环境管理
 	http://liuzhijun.iteye.com/blog/1872241
+21. json dumps序列化datetime类型变量
+	http://stackoverflow.com/questions/20502075/django-serialize-valuequeryset
+	from django.core.serializers.json import DjangoJSONEncoder
+HttpResponse(json.dumps(mydict,cls=DjangoJSONEncoder),content_type="application/json")
+22. POST 403错误，ajax
+	http://stackoverflow.com/questions/19333098/403-forbidden-error-when-making-an-ajax-post-request-in-django-framework
+	https://docs.djangoproject.com/en/1.7/ref/contrib/csrf/#ajax
+23. 在Django中实现一个高性能未读消息计数器
+	http://www.zlovezl.cn/articles/implement-an-efficient-counter-in-django/
+24. Django中使用缓存，如何处理set，list以及更新操作

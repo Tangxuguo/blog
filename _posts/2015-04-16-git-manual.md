@@ -6,3 +6,5 @@ tags: [linux]
 
 git rm $(git ls-files --deleted )
 
+
+git rm -r --cached  WebRoot/WEB-INF/classes/**/*

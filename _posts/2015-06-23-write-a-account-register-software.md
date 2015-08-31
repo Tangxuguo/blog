@@ -208,23 +208,14 @@ requests可以模拟正常浏览器的访问，设置cookies，sessions，这样
 
 目前网上可选的方案有两个:
 	
-	1. 用付费的人工验证码破解：
-		1. 国内有很多打码平台如联众打码平台 (每 1000 个验证码 ￥10 )，慧眼答题平台 (每 1000 个验证码 ￥12 )，官方都提供了部分接入API，价格也差不多
-		2. 国外出名的有antigate 提供的人肉识别服务 (最低每1000个验证码 $0.7)这里有一个[antigate wrapper](https://github.com/gotlium/antigate)
-	
-	2. 自己用算法做识别：
-	但是这个验证码不同网站难度不一样，
-		1. 简单的可以使用基于google的光学字符识别Tesseract-OCR和Cuneiform的[PyOCR](https://github.com/jflesch/pyocr)
-		2. 复杂的可以使用基于SVM算法的[captchacker](https://github.com/bratao/captchacker)
-		
-		以下在ubuntu12.04下测试
-		
-		安装wxpython
-		sudo apt-get install python-wxgtk2.8 python-wxtools wx2.8-i18n libwxgtk2.8-dev libgtk2.0-dev
-		安装libsvm
-		sudo apt-get install python-libsvm
-		安装opencv
-		sudo apt-get install libopencv-dev python-opencv
+1. 用付费的人工验证码破解：
+	1. 国内有很多打码平台如联众打码平台 (每 1000 个验证码 ￥10 )，慧眼答题平台 (每 1000 个验证码 ￥12 )，官方都提供了部分接入API，价格也差不多
+	2. 国外出名的有antigate 提供的人肉识别服务 (最低每1000个验证码 $0.7)这里有一个[antigate wrapper](https://github.com/gotlium/antigate)
+
+2. 自己用算法做识别：
+但是这个验证码不同网站难度不一样，
+	1. 简单的可以使用基于google的光学字符识别Tesseract-OCR和Cuneiform的[PyOCR](https://github.com/jflesch/pyocr)
+	2. 复杂的可以使用基于SVM算法的[captchacker](https://github.com/bratao/captchacker)
 		
 		
 
