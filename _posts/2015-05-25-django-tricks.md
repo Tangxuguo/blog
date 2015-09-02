@@ -40,7 +40,7 @@ tags: [Django]
 	http://blog.feshine.net/technology/1220.html
 20. 虚拟环境管理
 	http://liuzhijun.iteye.com/blog/1872241
-21. json dumps序列化datetime类型变量
+21. json dumps序列化datetime类型变量,以及初始化model
 	http://stackoverflow.com/questions/20502075/django-serialize-valuequeryset
 	from django.core.serializers.json import DjangoJSONEncoder
 HttpResponse(json.dumps(mydict,cls=DjangoJSONEncoder),content_type="application/json")
