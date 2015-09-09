@@ -50,3 +50,19 @@ HttpResponse(json.dumps(mydict,cls=DjangoJSONEncoder),content_type="application/
 23. 在Django中实现一个高性能未读消息计数器
 	http://www.zlovezl.cn/articles/implement-an-efficient-counter-in-django/
 24. Django中使用缓存，如何处理set，list以及更新操作
+25. 乱码、
+在所有涉及到中文显示的页面头加上 
+
+	    #coding:utf-8
+	修改settings.py文件，添加
+	    FILE_CHARSET = 'utf-8'
+	    DEFAULT_CHARSET = 'utf-8'
+
+    然后修改LANGUAGE_CODE = 'zh-cn'
+26. python(django) 使用PIL报错IOError at decoder jpeg not available
+ http://blog.csdn.net/leiyonglin/article/details/7190142
+27. Mysql字符乱码，修改默认字符编码
+mysqldump --user=username --password=password --default-character-set=latin1 --skip-set-charset dbname > dump.sql
+sed -r 's/latin1/utf8/g' dump.sql > dump_utf.sql
+mysql --user=username --password=password --execute="DROP DATABASE dbname; CREATE DATABASE dbname CHARACTER SET utf8 COLLATE utf8_general_ci;"
+mysql --user=username --password=password --default-character-set=utf8 dbname < dump_utf.sql
