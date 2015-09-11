@@ -282,22 +282,25 @@ footer .linkings {
 	display:inline-block;
 	height:90px;
 	width:90px;
-	margin: 10px;
+	margin: 0 auto;
+	margin-left: 20px; 
+	margin-bottom: 0px;
+	margin-top: 20px;
 	background-size:90px 90px;
 	background-position:left center;
 	background-repeat:no-repeat;
 	border-radius: 50%;
-	box-shadow: 0 0 0px 4px white, 0 0 4px 4px #eee;
+	box-shadow: 0 0 0px 4px white, 0 0 4px 4px #4d4d4d;
 	overflow: hidden;
 
 	}
 		    
 #logo:hover {
-		    -webkit-animation: spin 4s linear infinite;
-		    -moz-animation: spin 4s linear infinite;
-		    -ms-animation: spin 4s linear infinite;
-		    -o-animation: spin 4s linear infinite;
-		    animation: spin 4s linear infinite; }	    
+		    -webkit-animation: spin 2s linear infinite;
+		    -moz-animation: spin 2s linear infinite;
+		    -ms-animation: spin 2s linear infinite;
+		    -o-animation: spin 2s linear infinite;
+		    animation: spin 2s linear infinite; }	    
 
 @-webkit-keyframes spin {
   from {
