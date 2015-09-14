@@ -5,7 +5,7 @@ title: Home
 
 <script type="text/javascript"  src="/blog/public/js/jquery-2.0.3.min.js"></script>
 
-<section class="archive" id="pjax-container">
+<section class="archive">
 {% for post in site.posts %}
 {% unless post.next %}
 
@@ -40,12 +40,14 @@ title: Home
 {% endfor %}
 </section>
 
+<div id="main" class="span9"></div>
+
 <script type="text/javascript"  src="/blog/public/js/jquery.pjax.js"></script>
 <script type="text/javascript"  src="/blog/public/js/nprogress.js"></script>
 <script >
   
   // Pjax
-$(document).pjax('.pj', '#pjax-container', { fragment: '#pjax-container', timeout: 10000 });
+$(document).pjax('.pj', '#main', { fragment: '#main', timeout: 10000 });
 $(document).on({
   'pjax:click': function() {
     NProgress.start();
