@@ -43,7 +43,7 @@ title: Home
 <script type="text/javascript"  src="/blog/public/js/jquery.pjax.js"></script>
 <script type="text/javascript"  src="/blog/public/js/nprogress.js"></script>
 <script>
-$(document).pjax('pj', '#pjax-container', { fragment: '#pjax-container', timeout: 10000 });
+$(document).pjax('.pj', '#pjax-container', { fragment: '#pjax-container', timeout: 10000 });
 $(document).on({
   'pjax:click': function() {
     $(".archive").hide();
