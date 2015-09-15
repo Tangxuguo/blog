@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "前端观察：Pjax和NProgress"
+title: "前端观察：PJAX和NProgress"
 tags: [前端]
 ---
 
-看到两个非常有意思的插件，Pjax和NProgress
+看到两个非常有意思的插件，PJAX和NProgress
 
-Pjax可以让你不离开当前页面完成到其他页面的跳转，NProgress可以在顶部显示一个页面加载进度条，两者是一对好基友
+PJAX可以让你不离开当前页面完成到其他页面的跳转，NProgress可以在顶部显示一个页面加载进度条，两者是一对好基友
 
 github地址：
 
@@ -14,7 +14,7 @@ github地址：
 2. [https://github.com/defunkt/jquery-pjax](https://github.com/defunkt/jquery-pjax)
 
 
-pjax具体介绍看以参考这两篇文章：
+PJAX具体介绍看以参考这两篇文章：
 
 1. [PJAX的实现与应用](http://www.cnblogs.com/hustskyking/p/history-api-in-html5.html)
 2. [pjax：ajax和pushState结合的js库](http://www.welefen.com/pjax-for-ajax-and-pushstate.html)
@@ -25,7 +25,7 @@ NProgress具体看看这个介绍：
 
 安装和使用请参考官方github的示例
 
-本来想再博客上部署一下pjax和nprogress，奈何pjax不是很好使，加载进去后我的评论没法加载，另外NProgress的进度条没法终止，所有放弃了，以后再折腾
+本来想再博客上部署一下PJAX和nprogress，奈何PJAX不是很好使，加载进去后我的评论没法加载，另外NProgress的进度条没法终止，所有放弃了，以后再折腾
 
 所以现在的效果只有NProgress
 
@@ -91,7 +91,7 @@ NProgress具体看看这个介绍：
 		  animation: spin 400ms linear infinite; }
 2. 绑定动作
 
-	 由于没法用pjax，所以只用比较低级的两个加载开始和结束时间,如果有pjax可以从开始点击的时候统计
+	 由于没法用PJAX，所以只用比较低级的两个加载开始和结束时间,如果有PJAX可以从开始点击的时候统计
 	 
 		 <script >
 		
