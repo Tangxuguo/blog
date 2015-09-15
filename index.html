@@ -37,23 +37,3 @@ title: Home
 
 {% endfor %}
 </section>
-
-<div id="pjax-container"></div>
-<!-- nprogress + pjax-->
-<script type="text/javascript"  src="/blog/public/js/jquery.pjax.js"></script>
-<script type="text/javascript"  src="/blog/public/js/nprogress.js"></script>
-<script>
-$(document).pjax('.pj', '#pjax-container', { fragment: '#pjax-container', timeout: 10000 });
-$(document).on({
-  'pjax:click': function() {
-    $(".archive").hide();
-    NProgress.start();
-  },
-  'pjax:start': function() {
-    
-  },
-  'pjax:end': function() {
-    NProgress.done();
-  }
-});
-</script>
