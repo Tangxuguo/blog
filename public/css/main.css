@@ -191,7 +191,8 @@ footer .linkings {
 .container{
 	/*max-width:750px; brume default*/
 	max-width:650px;
-	padding:0 20px
+	padding:0 20px;
+	padding-top: 150px;
 	}
 
 .center{
@@ -276,6 +277,12 @@ footer .linkings {
 	
 .clearfix:after,dl{
 	clear:both
+	}
+	
+	header {
+		position: fixed;
+		top: 0px;
+		width: 150px;
 	}
 	
 #logo{
