@@ -283,6 +283,10 @@ footer .linkings {
 		position: fixed;
 		top: 0px;
 		height: 110px;
+		max-width: 650px;
+		width: 100%;
+		background-color: #fff;
+		z-index: 5;
 		
 	}
 	
