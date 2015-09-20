@@ -226,7 +226,7 @@ footer .linkings {
 .top-navbar a{
 	display:inline-block;
 	color:#333;
-	padding:20px 20px 10px;
+	padding:35px 20px 10px;
 	margin-right:0px;
 	margin-top:-5px;
 	text-transform:uppercase;
@@ -291,7 +291,7 @@ footer .linkings {
 	header {
 		position: fixed;
 		top: 0px;
-		height: 110px;
+		height: 80px;
 		max-width: 650px;
 		width: 100%;
 		background-color: #fff;
