@@ -93,7 +93,9 @@ hr{	margin:.7em 0;
 	
 code{
 	font-family:Consolas,"Liberation Mono",Courier,monospace;
-	font-size:.8rem
+	font-size:.8rem;
+	border-radius:3px;
+	white-space: pre-wrap;
 	}
 	
 p code{
@@ -101,7 +103,7 @@ p code{
 	border:1px solid #ddd;
 	background-color:#f8f8f8;
 	border-radius:3px;
-	white-space:nowrap
+	white-space: pre-wrap;
 	}
 	
 table{
