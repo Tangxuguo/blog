@@ -20,7 +20,7 @@ tags: [C]
 9. 杂项讨论
 
 
-###1. 让自己习惯C++（Accustoming your self to C++）
+##1. 让自己习惯C++（Accustoming your self to C++）
 
 条款01: 视C++ 为一个语言联邦
 	
@@ -154,8 +154,9 @@ tags: [C]
 		  return td;
 		 
 		}
-###2. 构造/析构/赋值运算（Constructors，Destructors，and Assignment Operators）
-	条款05: 了解C++ 默默编写并调用哪些函数
+##2. 构造/析构/赋值运算（Constructors，Destructors，and Assignment Operators）
+
+条款05: 了解C++ 默默编写并调用哪些函数
 	本条款告诉程序员，编译器自动为你做了哪些事情。
 	用户定义一个empty class (空类)，当C++ 处理过它之后，如果你自己没声明，编译器就会为它声明(编译器版本的)一个copy 构造函数、一个copy assignment操作符和一个析构函数。此外如果你没有声明任何构造函数，编译器也会为你声明一个default 构造函数。所有这些函数都是public 且inline 。举例，如果你写下:
 	1
@@ -176,7 +177,9 @@ tags: [C]
 		 
 		};
 	需要注意的是，只要你显式地定义了一个构造函数（不管是有参构造函数还是无参构造函数），编译器将不再为你创建default构造函数。
-	条款06: 若不想使用编译器自动生成的函数，就该明确拒绝
+	
+条款06: 若不想使用编译器自动生成的函数，就该明确拒绝
+
 	本条款告诉程序员，如果某些对象是独一无二的（比如房子），你应该禁用copy 构造函数或copy assignment 操作符，可选的方案有两种：
 	(1)	定义一个公共基类，让所有独一无二的对象继承它，具体如下：
 	
@@ -298,8 +301,10 @@ tags: [C]
 	(2)	不要尝试以某个copying 函数实现另一个copying 函数。应该将共同机能放进第三
 	个函数中，并由两个coping 函数共同调。换句话说，如果你发现你的copy 构造函数和copy assignment 操作符有相近的代码，消除重复代码的做法是，建立一个新的成员函数给两者调用。这样的函数往往是private 而且常被命名为init。
 
-###3. 资源管理（Resource Management）
+##3. 资源管理（Resource Management）
+
 条款13: 以对象管理资源
+
 	本条款建议程序员使用对象管理资源（如申请的内存），给出的经验是：
 	(1)	为防止资源泄漏，请使用RAII(“资源取得时机便是初始化时机” (Resource Acquisition Is Initialization; RAII))对象，它们在构造函数中获得资源并在析构函数中释放资源。
 	(2)	两个常被使用的RAII classes 分别是trl: : shared_ptr 和auto_ptr。前者通常是较佳选择，因为其copy行为比较直观。若选择auto_ptr，复制动作会使它(被复制物)指向null。
@@ -330,7 +335,7 @@ tags: [C]
 	不同的C++ 编译器执行这三条语句的顺序不一样，但对priority的调用可以排在第一或第二或第三执行。如果编译器选择以第二顺位执行且priority函数抛出了异常，则新创建的对象Widget将导致内存泄漏，解决方法如下：
 	std::trl::shared_ptr<Widget> pw(new Widget); //在独立语句内以智能指针存储Widget对象
 	processWidget(pw, priority()); //这个调用肯定不存在内存泄漏
-###4. 设计与声明（Designs and Declarations）
+##4. 设计与声明（Designs and Declarations）
 
 条款18: 让接口容易被正确使用，不易被误用
 
@@ -400,7 +405,7 @@ tags: [C]
 
 条款25:考虑写出一个不抛异常的swap函数
 
-###5. 实现（Implementations）
+##5. 实现（Implementations）
 
 
 条款26 :尽可能延后变量定义式的出现时间
@@ -477,7 +482,7 @@ tags: [C]
 		 
 		}
 	(2)	Interface class. 实际上就是抽象基类
-###6. 继承与面向对象设计（Inheritance and Object-Oriented Design）
+##6. 继承与面向对象设计（Inheritance and Object-Oriented Design）
 条款32: 确定你的public 继承塑模出is-a 关系
 
 	本条款告诉读者一个非常基本的继承思想：”public 继承”意味is唱。适用于base classes 身上的每一件事情一定也适用于derived classes 身上，因为每一个derived class 对象也都是一个base class 对象，但反之不然。
@@ -833,7 +838,7 @@ tags: [C]
 	(1)	多重继承比单一继承复杂。他可能导致新的歧义性，以及virtual继承的需要
 	(2)	Virtual继承会增加大小、速度、初始化复杂度等等成本。如果virtual base classed不带任何数据，将是最具使用价值的情况。
 	(3)	多重继承最正当用途是：其中一个设计“public 继承某个interface class”和“priavte继承某个协助实现的class”的两相结合。
-###7. 模板与泛型编程（Templates and Generic Programming）
+##7. 模板与泛型编程（Templates and Generic Programming）
 条款41:了解隐式接口和编译期多态
 
 	(1)	class和templates都支持接口(interfaces)和多态(polymorphism)。
@@ -1105,7 +1110,7 @@ tags: [C]
 
 条款48: 认识template 元编程
 
-###8. 定制new和delete（Customizing new and delete）
+##8. 定制new和delete（Customizing new and delete）
 条款49: 了解new-handler 的行为
 
 	(1)	set_new_handler 允许客户指定一个函数，在内存分配无法获得满足时被调用。
@@ -1152,7 +1157,7 @@ tags: [C]
 
 	1.	当你写一个placement new，请确定也写出对应的placement delete。如果没这样做，你的程序可能会出现微弱时断时续的内存泄漏；
 	2.	当你写placement new和placement delete时，请确定不要无意识的（非故意的）遮掩了全局范围默认的new/delete版本。
-###9. 杂项讨论（Miscellany）
+##9. 杂项讨论（Miscellany）
 
 条款53: 不要轻忽编译器的警告
 
