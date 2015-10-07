@@ -158,6 +158,7 @@ tags: [C]
 ##2. 构造/析构/赋值运算（Constructors，Destructors，and Assignment Operators）
 
 条款05: 了解C++ 默默编写并调用哪些函数
+
 	本条款告诉程序员，编译器自动为你做了哪些事情。
 	用户定义一个empty class (空类)，当C++ 处理过它之后，如果你自己没声明，编译器就会为它声明(编译器版本的)一个copy 构造函数、一个copy assignment操作符和一个析构函数。此外如果你没有声明任何构造函数，编译器也会为你声明一个default 构造函数。所有这些函数都是public 且inline 。举例，如果你写下:
 	1
