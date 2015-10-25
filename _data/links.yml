@@ -1,5 +1,5 @@
 ﻿- url: /blog
-  title: 主页
+  title: 博客
 
 - url: /blog/tags
   title: 标签
@@ -10,5 +10,6 @@
 - url: /blog/pages/read.html
   title: 读书 
 
-- url: /blog/pages/feed.xml
-  title: 订阅 
+- url: /lab/
+  title: 实验室 
+
