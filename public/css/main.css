@@ -54,18 +54,16 @@ ol,ul{
 	}
 	
 img{
-	max-width:100%;
+	max-width:90%;
 	margin:20px auto;
 	height:auto;
 	border:0;
 	outline:0
-	-webkit-box-shadow: 1px 4px 16px 8px #5CA2BE;
-    -moz-box-shadow: 1px 4px 16px 8px #5CA2BE;
-    box-shadow: 1px 4px 16px 8px #5CA2BE;
+	-webkit-box-shadow: 1px 1px 1px 1px #333333;
+    -moz-box-shadow: 1px 1px 1px 1px #333333;
+    box-shadow: 1px 1px 1px 1px #333333;
     /*I set the images aligned*/
     display: block; 
-    margin-left: auto; 
-    margin-right: auto;
 	}
 	
 a{
